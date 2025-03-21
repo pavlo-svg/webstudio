@@ -1,5 +1,107 @@
-body{
-background-color: rgb(193, 255, 212);
+
+:root {
+--brand-color: #2196f3;
+}
+
+body {
+    background-color: rgb(193, 255, 212);
+}
+.header-logo{
+color: var(--brand-color);
+}
+
+.main-section1{
+background-color: #2f303a;
+}
+
+
+.main-section1-button{
+color: white;
+background-color: var(--brand-color);
+}
+.main-section2-ul-h3{
+font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+.main-section2-ul-p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+   line-height: 171%;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.main-section2-li1-h3{
+font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: #212121;
+
+}
+.main-section2-li1-p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: #212121;
 
 
 }
+.main-section2-li2-h3 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.main-section2-li2-p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.main-section2-li3-h3 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.main-section2-li3-p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.section3-h2{
+font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+}
+.section4-h2{
+font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+}
+img
+
+

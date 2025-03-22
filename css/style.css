@@ -1,107 +1,115 @@
 
 :root {
 --brand-color: #2196f3;
+--accent-color:#ffffff;
+--hero-back:#2f303a;
+--text-color:#212121;
+--second-text:#757575;
+--link-color:#ffffff60;
 }
 
 body {
-    background-color: rgb(193, 255, 212);
+    background-color: var(--accent-color);
+}
+.header-span{
+        font-weight: 700;
+        font-size: 26px;
+        letter-spacing: 0.03em;
+    color: var(--text-color);
 }
 .header-logo{
+        font-weight: 700;
+        font-size: 26px;
+        letter-spacing: 0.03em;
 color: var(--brand-color);
 }
 
-.main-section1{
-background-color: #2f303a;
+.header-link{
+
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        color: var(--text-color);
 }
 
+.hero{
+background-color: var(--hero-back);
+}
 
-.main-section1-button{
-color: white;
+.hero-title{
+    color:var(--accent-color) ;
+}
+
+.hero-button{
+color: var(--accent-color);
 background-color: var(--brand-color);
 }
-.main-section2-ul-h3{
-font-family: var(--font-family);
+.adwantages-title{
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--text-color);
 }
-.main-section2-ul-p{
-    font-family: var(--font-family);
+.adwantages-text{
     font-weight: 400;
     font-size: 14px;
    line-height: 171%;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--second-text);
 }
-.main-section2-li1-h3{
-font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
-    color: #212121;
 
-}
-.main-section2-li1-p {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
-    color: #212121;
-
-
-}
-.main-section2-li2-h3 {
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
-    color: #212121;
-}
-.main-section2-li2-p {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
-    color: #212121;
-}
-.main-section2-li3-h3 {
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
-    color: #212121;
-}
-.main-section2-li3-p {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
-    color: #212121;
-}
-.section3-h2{
-font-family: var(--font-family);
+.work-title{
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: #212121;
+    color: var(--text-color);
 }
-.section4-h2{
-font-family: var(--font-family);
+.team-title{
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: #212121;
+    color: var(--second-text);
 }
-img
+.team-name{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--text-color);
+}
+.team-job{
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color:var(--second-text);
+}
+.footer {
+    background: var(--text-color);
+}
 
+.footer-logo {
 
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    color: var(--brand-color);
+}
+
+.footer-span {
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.footer-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: var(--link-color);
+}

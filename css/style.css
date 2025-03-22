@@ -6,6 +6,7 @@
 --text-color:#212121;
 --second-text:#757575;
 --link-color:#ffffff60;
+--button-btn: #f5f4fa;
 }
 
 body {
@@ -112,4 +113,28 @@ background-color: var(--brand-color);
     line-height: 171%;
     letter-spacing: 0.03em;
     color: var(--link-color);
+}
+
+.button-btn{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 162%;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: var(--text-color);
+        background-color: var(--button-btn);
+}
+.cart-titel{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 200%;
+    letter-spacing: 0.06em;
+    color:var(--text-color);
+}
+.cart-box{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.03em;
+    color:var(--second-text);
 }

@@ -74,6 +74,10 @@ background-color: var(--brand-color);
     text-align: center;
     color: var(--second-text);
 }
+.team-img{
+    width: 270px;
+        height: 260px;
+}
 .team-name{
     font-weight: 500;
     font-size: 16px;
@@ -93,7 +97,6 @@ background-color: var(--brand-color);
 }
 
 .footer-logo {
-
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;

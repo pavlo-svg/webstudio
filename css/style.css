@@ -30,7 +30,6 @@ color: var(--brand-color);
 }
 
 .header-link{
-
         font-weight: 500;
         font-size: 14px;
         letter-spacing: 0.02em;
@@ -42,8 +41,6 @@ background-color: var(--hero-back);
 }
 
 .hero-title{
-    padding-top: 200px;
-    padding-bottom: 200px;
     color:var(--accent-color) ;
 }
 
@@ -147,7 +144,7 @@ background-color: var(--brand-color);
     letter-spacing: 0.03em;
     color:var(--second-text);
 }
-.container {
+/*.container {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;

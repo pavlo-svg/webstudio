@@ -12,6 +12,10 @@
 body {
     background-color: var(--accent-color);
 }
+.header{
+    padding-left: 24px;
+    padding-bottom: 25px;
+}
 .header-span{
         font-weight: 700;
         font-size: 26px;
@@ -38,6 +42,8 @@ background-color: var(--hero-back);
 }
 
 .hero-title{
+    padding-top: 200px;
+    padding-bottom: 200px;
     color:var(--accent-color) ;
 }
 
@@ -140,4 +146,10 @@ background-color: var(--brand-color);
     line-height: 187%;
     letter-spacing: 0.03em;
     color:var(--second-text);
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    outline: 5px dashed  tomato;
 }

@@ -144,6 +144,9 @@ background-color: var(--brand-color);
     letter-spacing: 0.03em;
     color:var(--second-text);
 }
+.body{
+    font-family: "Roboto";
+}
 /*.container {
     width: 1200px;
     margin: 0 auto;

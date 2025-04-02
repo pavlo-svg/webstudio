@@ -11,6 +11,7 @@
 
 body {
     background-color: var(--accent-color);
+    font-family: "Roboto";
 }
 .header{
     padding-left: 24px;
@@ -58,11 +59,10 @@ background-color: var(--brand-color);
 .adwantages-text{
     font-weight: 400;
     font-size: 14px;
-   line-height: 171%;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--second-text);
 }
-
 .work-title{
     font-weight: 700;
     font-size: 36px;
@@ -116,7 +116,7 @@ background-color: var(--brand-color);
 .footer-link {
     font-weight: 400;
     font-size: 14px;
-    line-height: 171%;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--link-color);
 }
@@ -143,9 +143,6 @@ background-color: var(--brand-color);
     line-height: 187%;
     letter-spacing: 0.03em;
     color:var(--second-text);
-}
-.body{
-    font-family: "Roboto";
 }
 /*.container {
     width: 1200px;

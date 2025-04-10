@@ -8,7 +8,12 @@
 --link-color:#ffffff60;
 --button-btn: #f5f4fa;
 }
-
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    border: 1px red solid;
+}
 body {
     background-color: var(--accent-color);
     font-family: "Roboto";
@@ -17,6 +22,7 @@ body {
     display: flex;
     padding-left: 24px;
     padding-bottom: 25px;
+    padding: 24px 0 25px 0;
 }
 .header-span{
         font-weight: 700;
@@ -40,6 +46,7 @@ color: var(--brand-color);
 
 .hero{
 background-color: var(--hero-back);
+padding: 194px 0 200px 0;
 }
 
 .hero-title{
@@ -49,6 +56,9 @@ background-color: var(--hero-back);
 .hero-button{
 color: var(--accent-color);
 background-color: var(--brand-color);
+}
+.adwantages{
+    padding: 94px 0 94px 0;
 }
 .adwantages-title{
     font-weight: 700;
@@ -64,12 +74,18 @@ background-color: var(--brand-color);
     letter-spacing: 0.03em;
     color: var(--second-text);
 }
+.work{
+    padding: 0 0 94px 0;
+}
 .work-title{
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--text-color);
+}
+.team{
+    padding: 94px 0 94px 0;
 }
 .team-title{
     font-weight: 700;
@@ -98,6 +114,7 @@ background-color: var(--brand-color);
 }
 .footer {
     background: var(--text-color);
+    padding: 60px 0 60px 0;
 }
 
 .footer-logo {
@@ -121,7 +138,9 @@ background-color: var(--brand-color);
     letter-spacing: 0.03em;
     color: var(--link-color);
 }
-
+.button{
+    padding-top: 94px;
+}
 .button-btn{
         font-weight: 500;
         font-size: 16px;
@@ -130,6 +149,10 @@ background-color: var(--brand-color);
         text-align: center;
         color: var(--text-color);
         background-color: var(--button-btn);
+}
+.cart-list{
+    padding-top:34px;
+    padding-bottom: 94px;
 }
 .cart-titel{
     font-weight: 700;

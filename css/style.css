@@ -82,6 +82,13 @@ body {
 .adwantages {
   padding: 94px 0 94px 0;
 }
+.adwantages-list{
+   display: flex;
+  text-align: center;
+  justify-content: center;
+  text-align: start;
+  gap: 30px;
+}
 .adwantages-title {
   font-weight: 700;
   font-size: 14px;
@@ -99,15 +106,32 @@ body {
 .work {
   padding: 0 0 94px 0;
 }
+.work-list{
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  text-align: center;
+}
 .work-title {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
-  text-align: center;
   color: var(--text-color);
+  /* justify-content: center;
+  align-items: center; */
 }
 .team {
   padding: 94px 0 94px 0;
+  background-color: #f5f4fa;
+}
+.team-list{
+      display: flex;
+  gap: 28px;
+  justify-content: center;
+  text-align: center;
+}
+.team-item{
+  background-color: #ffffff;
 }
 .team-title {
   font-weight: 700;
@@ -120,12 +144,19 @@ body {
   width: 270px;
   height: 260px;
 }
+.team-text{
+ padding-top: 30px;
+ padding-bottom: 30px;
+ padding-left: auto;
+ padding-right: auto;
+}
 .team-name {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--text-color);
+  margin-bottom: 10px;
 }
 .team-job {
   font-weight: 400;
@@ -134,11 +165,19 @@ body {
   text-align: center;
   color: var(--second-text);
 }
+.address{
+  color: var(--accent-color);
+  margin-top: 20px;
+}
 .footer {
   background: var(--text-color);
   padding: 60px 0 60px 0;
 }
-
+.footer-list{
+display: flex;
+flex-direction: column;
+gap: 9px;
+}
 .footer-logo {
   font-weight: 700;
   font-size: 26px;
@@ -161,7 +200,15 @@ body {
   color: var(--link-color);
 }
 .button {
+  padding-bottom: 94px;
   padding-top: 94px;
+  display: flex;
+}
+.button-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 .button-btn {
   font-weight: 500;
@@ -172,9 +219,14 @@ body {
   color: var(--text-color);
   background-color: var(--button-btn);
 }
-.cart-list {
+.cart-list{
   padding-top: 34px;
   padding-bottom: 94px;
+   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 .cart-titel {
   font-weight: 700;
@@ -184,6 +236,12 @@ body {
   color: var(--text-color);
 }
 
+  .cart-img{
+    width: 100%;
+  }
+  .cart-item{
+    flex-basis: calc((100% - 60px) / 3);
+  }
 .cart-box {
   font-weight: 400;
   font-size: 16px;

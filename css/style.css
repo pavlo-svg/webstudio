@@ -23,6 +23,9 @@ body {
   padding-bottom: 25px;
   padding: 24px 0 25px 0;
 }
+.header-info{
+  
+}
 .header-box{
      display: flex;
     align-items: center;

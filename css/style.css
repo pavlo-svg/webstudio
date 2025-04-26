@@ -44,6 +44,9 @@ body {
 .nav-link:hover{
   color: var(--brand-color);
 }
+.nav-link{
+  color: var(--text-color);
+}
 .header-span {
   font-weight: 700;
   font-size: 26px;

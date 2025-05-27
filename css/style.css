@@ -100,11 +100,21 @@ body {
   color: var(--accent-color);
   margin-bottom: 30px;
   font-weight: 700;
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 6%;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .hero-button {
   color: var(--accent-color);
   background-color: var(--brand-color);
+}
+.hero-text{
+margin: 10px 32px;
 }
 .adwantages {
   padding: 94px 0 94px 0;
@@ -129,6 +139,15 @@ body {
 }
 .adwantages-item:nth-child(1)::before {
   background-image: url(../img/antenna.png);
+}
+.adwantages-item:nth-child(2)::before {
+  background-image: url(../img/clock.png);
+}
+.adwantages-item:nth-child(3)::before {
+  background-image: url(../img/diagram.png);
+}
+.adwantages-item:nth-child(4)::before {
+  background-image: url(../img/astronaut.png);
 }
 .adwantages-title {
   font-weight: 700;

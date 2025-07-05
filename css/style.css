@@ -11,7 +11,7 @@
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  border: 1px;
+  border: 1px solid red;
 }
 body {
   background-color: var(--accent-color);
@@ -240,6 +240,8 @@ body {
 .footer {
   background: var(--text-color);
   padding: 60px 0 60px 0;
+  display: flex;
+  flex-direction: column;
 }
 .footer-info {
   font-style: normal;
@@ -342,24 +344,100 @@ body {
   letter-spacing: 0.03em;
   color: var(--second-text);
 }
+.icon-item {
+  width: 16px;
+  height: 12px;
+  fill: rgba(117, 117, 117, 1);
+}
+.icon-item:hover {
+  width: 16px;
+  height: 12px;
+  fill: rgba(33, 150, 243, 1);
+}
 .icon-team {
   width: 20px;
   height: 20px;
+  margin-top: 30px;
 }
-.team-icon-list{
+.team-icon-list {
   display: flex;
   gap: 10px;
   justify-content: center;
   align-items: center;
 }
-.team-icon-link{
+.team-icon-link {
   padding: 12px;
   border-radius: 50%;
   fill: rgba(175, 177, 184, 1);
 }
 .team-icon-link:hover,
-.team-icon-link:focus{
+.team-icon-link:focus {
   background-color: #2196f3;
   fill: #ffffff;
-  
+}
+.clients-text {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-company {
+  width: 106px;
+  height: 60px;
+  fill: rgba(175, 177, 184, 1);
+}
+.clients-company:hover {
+  width: 106px;
+  height: 60px;
+  fill: rgba(33, 150, 243, 1);
+}
+.clients {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  padding: 94px 0 94px 0;
+}
+.clients-icon-item {
+  border: 1px solid gray;
+  padding: 23px 65px;
+  border-radius: 4px;
+}
+.clients-icon-item:hover {
+  border: 1px solid rgba(33, 150, 243, 1);
+  padding: 23px 65px;
+  border-radius: 4px;
+}
+.footer-text {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+}
+
+.footer-wrap{
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+.join {
+ display: block;
+ margin-left: 70px;
+}
+.join-text {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  color: #ffffff;
 }

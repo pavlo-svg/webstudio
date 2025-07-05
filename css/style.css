@@ -441,3 +441,27 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
+
+.icon-join {
+  width: 20px;
+  height: 20px;
+  margin-top: 30px;
+}
+.join-icon-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.join-icon-link {
+  padding: 12px;
+  border-radius: 50%;
+  fill: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.1);
+  ;
+}
+.join-icon-link:hover,
+.join-icon-link:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
+}

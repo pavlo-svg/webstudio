@@ -79,7 +79,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
-
+.header-link:hover :nth-child(1){
+  fill: #2196f3;
+}
 .hero {
   background-color: var(--hero-back);
   padding: 200px 0 200px 0;
@@ -454,6 +456,7 @@ body {
   align-items: center;
 }
 .join-icon-link {
+  display: inline-block;
   padding: 12px;
   border-radius: 50%;
   fill: rgb(255, 255, 255);
@@ -465,15 +468,4 @@ body {
   background-color: #2196f3;
   fill: #ffffff;
 }
-.join-icon-link {
-  display: inline-block;
-  padding: 12px;
-  border-radius: 50%;
-  fill: rgba(175, 177, 184, 1);
-}
-.join-icon-list {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-}
+

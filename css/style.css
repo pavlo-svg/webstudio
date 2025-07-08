@@ -357,7 +357,6 @@ body {
 .icon-team {
   width: 20px;
   height: 20px;
-  margin-top: 30px;
 }
 .team-icon-list {
   display: flex;
@@ -366,6 +365,7 @@ body {
   align-items: center;
 }
 .team-icon-link {
+  display: inline-block;
   padding: 12px;
   border-radius: 50%;
   fill: rgba(175, 177, 184, 1);
@@ -386,6 +386,8 @@ body {
   align-items: center;
 }
 .clients-company {
+  display: inline-block;
+  padding: 23px 65px;
   width: 106px;
   height: 60px;
   fill: rgba(175, 177, 184, 1);
@@ -404,7 +406,6 @@ body {
 }
 .clients-icon-item {
   border: 1px solid gray;
-  padding: 23px 65px;
   border-radius: 4px;
 }
 .clients-icon-item:hover {

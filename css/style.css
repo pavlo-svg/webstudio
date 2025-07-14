@@ -77,7 +77,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-  color: var(--text-color);
+  color: rgba(117, 117, 117, 1);
 }
 .header-link:hover :nth-child(1) {
   fill: #2196f3;
@@ -114,9 +114,7 @@ body {
 .hero-button {
   color: var(--accent-color);
   background-color: var(--brand-color);
-}
-.hero-text {
-  margin: 10px 32px;
+  padding: 10px 32px;
 }
 .adwantages {
   padding: 94px 0 94px 0;
@@ -176,6 +174,7 @@ body {
   gap: 28px;
   justify-content: center;
   text-align: center;
+  margin-top: 50px;
 }
 .work-title {
   font-weight: 700;
@@ -183,9 +182,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-.work-img {
-  margin-top: 50px;
-}
+
 .team {
   padding: 94px 0 94px 0;
   background-color: #f5f4fa;
@@ -472,11 +469,14 @@ body {
   align-items: center;
 }
 .join-icon-link {
-  display: inline-block;
-  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px;
   border-radius: 50%;
   fill: rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
 }
 .join-icon-link:hover,
 .join-icon-link:focus {

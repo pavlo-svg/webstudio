@@ -97,7 +97,6 @@ body {
     url(../img/hero.png);
   background-position: center;
   background-repeat: no-repeat;
-  width: 1600px;
   margin: 0 auto;
 }
 
@@ -118,6 +117,14 @@ body {
   color: var(--accent-color);
   background-color: var(--brand-color);
   padding: 10px 32px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 6%;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 4px;
 }
 .adwantages {
   padding: 94px 0 94px 0;
@@ -365,9 +372,12 @@ body {
   gap: 10px;
   justify-content: center;
   align-items: center;
+  margin-top: 16px;
 }
 .team-icon-link {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 12px;
   border-radius: 50%;
   fill: rgba(175, 177, 184, 1);

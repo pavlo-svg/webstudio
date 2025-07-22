@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body class="body">
     <header class="header">
       <div class="container header-box">
@@ -66,7 +67,9 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button class="hero-button">Замовити послугу</button>
+          <button class="hero-button" data-modal-open type="button">
+            Замовити послугу
+          </button>
         </div>
       </section>
       <section class="adwantages">
@@ -359,7 +362,73 @@
             </li>
           </ul>
         </div>
+
+        <div class="news">
+          <h2 class="news-title">Підпишіться на розсилку</h2>
+          <form class="news-list">
+            <input
+              type="email"
+              class="news-input"
+              placeholder="E-mail"
+              required
+            />
+            <button type="submit" class="news-btn">
+              Підписатися<svg class="news-svg">
+                <use href="./img/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <div class="model">
+        <button class="model-close" data-modal-close type="button">
+          <svg class="model-icon">
+            <use href="./img/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="model-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="modal-form">
+          <label class="model-label"
+            >Ім'я
+            <input required class="model-input" type="text" />
+            <svg class="model-ikon">
+              <use href="./img/symbol-defs.svg#icon-man"></use>
+            </svg>
+          </label>
+          <label class="model-label"
+            >Телефон
+            <input required class="model-input" type="tel" />
+            <svg class="model-ikon">
+              <use href="./img/symbol-defs.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label class="model-label"
+            >Пошта
+            <input required class="model-input" type="email" />
+            <svg class="model-ikon">
+              <use href="./img/symbol-defs.svg#icon-emailbalack"></use>
+            </svg>
+          </label>
+          <label class="model-label"
+            >Коментар
+            <textarea
+              placeholder="Введіть текст"
+              class="model-comment"
+            ></textarea>
+          </label>
+          <label class="model-box">
+            <input required type="checkbox" class="model-check" />
+            Погоджуюся з розсилкою та приймаю
+            <a href="" class="model-link">Умови договору</a>
+          </label>
+          <div class="model-frap">
+            <button type="submit" class="model-sent">Відправити</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="./js/model.js"></script>
   </body>
 </html>

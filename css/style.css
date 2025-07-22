@@ -501,6 +501,7 @@ body {
   gap: 10px;
   justify-content: center;
   align-items: center;
+margin-top: 20px;
 }
 .join-icon-link {
   display: flex;
@@ -510,7 +511,7 @@ body {
   border-radius: 50%;
   fill: rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.1);
-  margin-top: 20px;
+  
 }
 .join-icon-link:hover,
 .join-icon-link:focus {
@@ -693,6 +694,8 @@ body {
   background-color: #2196f3;
   border: none;
   border-radius: 4px;
+  display: flex;
+  gap: 10px;
 }
 .news-title {
   font-family: "Roboto";
@@ -716,9 +719,13 @@ body {
 .news-list {
   flex-direction: row;
   flex-wrap: nowrap;
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
 }
 .news-svg {
   width: 23px;
   height: 24px;
-  fill: #ffffff;
+  fill: white;
 }
+

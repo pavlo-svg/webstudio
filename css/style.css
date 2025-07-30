@@ -45,6 +45,11 @@ body {
 .nav-link:hover {
   color: var(--brand-color);
 }
+
+.nav-item{
+  position: relative;
+}
+
 .nav-link {
   color: var(--text-color);
   font-family: "Roboto";
@@ -53,6 +58,30 @@ body {
   line-height: 100%;
   letter-spacing: 2%;
 }
+.aktife{
+  color: var(--brand-color);
+}
+
+
+.aktife::after{
+  content: "";
+  width: 100%;
+  border-radius: 2px;
+  height: 4px;
+  background-color: var(--brand-color);
+  display: block;
+  position: absolute;
+  bottom: -33px;
+  transform: scale(0);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: 0.4, 0, 0.2, 1;
+}
+
+.aktife:hover::after{
+  transform: scale(1);
+}
+
 .header-span {
   font-weight: 700;
   font-size: 26px;
@@ -344,19 +373,29 @@ body {
 .text-box{
   width: 100%;
   height: 100%;
-  color: #000;
-  background-color: #2196f3;
+  color: #FFFFFF;
+  background: rgba(33, 150, 243, 0.90);
   opacity: 0;
   transform: translateY(100%);
   transition-property: transform;
   transition-duration: 300ms;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  padding: 63px 24px;
 }
-.cart-img {
-  width: 100%;
+.box-cart{
+  position: relative;
   overflow: hidden;
 }
-.cart-img:hover{
-  .text1{
+.cart-img{
+  width: 100%;
+}
+.cart-item:hover{
+  .text-box{
     opacity: 1;
     transform: translateY(0);
   }

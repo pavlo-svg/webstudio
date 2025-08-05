@@ -56,7 +56,9 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 2%;
+  letter-spacing: 2;
+  transition-duration: "250ms";
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .aktife{
   color: var(--brand-color);
@@ -110,10 +112,11 @@ body {
   font-size: 14px;
   letter-spacing: 0.02em;
   color: rgba(117, 117, 117, 1);
+  transition-duration: "250ms";
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link:hover :nth-child(1) {
   fill: #2196f3;
-  transition-duration: "250ms";
 }
 .hero {
   background-color: var(--hero-back);
@@ -298,7 +301,7 @@ body {
   font-style: normal;
 }
 .footer {
-  background: var(--text-color);
+  background: #2F303A;
   padding: 60px 0 60px 0;
   display: flex;
   flex-direction: column;
@@ -437,9 +440,10 @@ body {
   width: 16px;
   height: 12px;
   fill: rgba(117, 117, 117, 1);
+  transition-duration: "250ms";
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-item:hover {
-  transition-duration: "250ms";
   width: 16px;
   height: 12px;
   fill: rgba(33, 150, 243, 1);
@@ -447,6 +451,8 @@ body {
 .icon-team {
   width: 20px;
   height: 20px;
+  transition-duration: "250ms";
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-icon-list {
   display: flex;
@@ -462,10 +468,11 @@ body {
   padding: 12px;
   border-radius: 50%;
   fill: rgba(175, 177, 184, 1);
+  transition-duration: "250ms";
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-icon-link:hover,
 .team-icon-link:focus {
-  transition-duration: "250ms";
   background-color: #2196f3;
   fill: #ffffff;
 }
@@ -483,6 +490,8 @@ body {
   width: 106px;
   height: 60px;
   fill: rgba(175, 177, 184, 1);
+  transition-duration: "250ms";
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-icon-link {
   display: flex;
@@ -492,9 +501,10 @@ body {
   height: 92px;
   border-radius: 4px;
   outline: 1px solid #afb1b8;
+  transition-duration: "250ms";
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-icon-link:hover {
-  transition-duration: "250ms";
   outline: 1px solid #2196f3;
   .clients-company {
     fill: #2196f3;
@@ -557,6 +567,8 @@ body {
 .icon-join {
   width: 20px;
   height: 20px;
+  transition-duration: "250ms";
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .join-icon-list {
   display: flex;
@@ -573,11 +585,12 @@ margin-top: 20px;
   border-radius: 50%;
   fill: rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.1);
+  transition-duration: "250ms";
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 .join-icon-link:hover,
 .join-icon-link:focus {
-  transition-duration: "250ms";
   background-color: #2196f3;
   fill: #ffffff;
 }
@@ -588,6 +601,7 @@ margin-top: 20px;
 }
 .model {
   background-color: #ffffff;
+  transition-duration: "250ms";
   width: 528px;
   border-radius: 4px;
   background: #fff;
@@ -719,7 +733,6 @@ margin-top: 20px;
 }
 .model-input:hover,
 .model-input:focus {
-  transition-duration: "250ms";
   outline: 1px solid rgb(56, 43, 238);
 }
 .model-input:hover + .model-ikon,
@@ -771,7 +784,8 @@ margin-top: 20px;
   color: #fff;
 }
 .news-input {
-  padding: 15px 250px 15px 16px;
+  width: 358px;
+height: 50px;
   background-color: var(--text-color);
   border: 1px solid white;
   border-radius: 4px;

@@ -113,6 +113,7 @@ body {
 }
 .header-link:hover :nth-child(1) {
   fill: #2196f3;
+  transition-duration: "250ms";
 }
 .hero {
   background-color: var(--hero-back);
@@ -438,6 +439,7 @@ body {
   fill: rgba(117, 117, 117, 1);
 }
 .icon-item:hover {
+  transition-duration: "250ms";
   width: 16px;
   height: 12px;
   fill: rgba(33, 150, 243, 1);
@@ -463,6 +465,7 @@ body {
 }
 .team-icon-link:hover,
 .team-icon-link:focus {
+  transition-duration: "250ms";
   background-color: #2196f3;
   fill: #ffffff;
 }
@@ -491,6 +494,7 @@ body {
   outline: 1px solid #afb1b8;
 }
 .clients-icon-link:hover {
+  transition-duration: "250ms";
   outline: 1px solid #2196f3;
   .clients-company {
     fill: #2196f3;
@@ -573,6 +577,7 @@ margin-top: 20px;
 }
 .join-icon-link:hover,
 .join-icon-link:focus {
+  transition-duration: "250ms";
   background-color: #2196f3;
   fill: #ffffff;
 }
@@ -714,6 +719,7 @@ margin-top: 20px;
 }
 .model-input:hover,
 .model-input:focus {
+  transition-duration: "250ms";
   outline: 1px solid rgb(56, 43, 238);
 }
 .model-input:hover + .model-ikon,

@@ -1,0 +1,91 @@
+.team {
+  padding: 94px 0 94px 0;
+  background-color: #f5f4fa;
+  display: flex;
+  text-align: center;
+}
+.team-list {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+.team-item {
+  background-color: #ffffff;
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
+}
+.team-img {
+  width: 270px;
+  height: 260px;
+}
+.team-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: auto;
+  padding-right: auto;
+}
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+.team-job {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--second-text);
+}
+.team-icon-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+.team-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 50%;
+  fill: rgba(175, 177, 184, 1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-icon-link:hover,
+.team-icon-link:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
+}
+.icon-item {
+  width: 16px;
+  height: 12px;
+  fill: rgba(117, 117, 117, 1);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-item:hover {
+  width: 16px;
+  height: 12px;
+  fill: rgba(33, 150, 243, 1);
+}
+.icon-team {
+  width: 20px;
+  height: 20px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

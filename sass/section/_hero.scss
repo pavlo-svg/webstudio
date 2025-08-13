@@ -1,0 +1,41 @@
+.hero {
+  background-color: var(--hero-back);
+  padding: 200px 0 200px 0;
+  text-align: center;
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.hero-title {
+  color: var(--accent-color);
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 6%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  color: var(--accent-color);
+  background-color: var(--brand-color);
+  padding: 10px 32px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 6%;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 4px;
+}

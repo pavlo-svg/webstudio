@@ -3,21 +3,19 @@
   padding-left: 24px;
   padding-bottom: 25px;
   padding: 24px 0 25px 0;
-}
+ }
 .header-link:hover {
   color: var(--brand-color);
 }
 
-.header-info {
-  font-style: normal;
-}
 .header-box {
   display: flex;
-  align-items: center;
-  justify-content: center;
+ align-items: center;
 }
 .header-nav {
+  display: flex;
   margin-right: auto;
+  align-items: center;
 }
 .header-span {
   font-weight: 700;
@@ -49,9 +47,11 @@
 }
 .header-link:hover :nth-child(1) {
   fill: #2196f3;
-}.nav {
+}
+.nav {
   display: flex;
   gap: 50px;
+  margin-right: auto;
 }
 .nav-link:hover {
   color: var(--brand-color);
@@ -94,4 +94,10 @@
 
 .aktife:hover::after{
   transform: scale(1);
+}
+.info{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 30px;
 }

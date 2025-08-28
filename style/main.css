@@ -1,41 +1,45 @@
-/*! Reset styles */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  box-sizing: border-box;
-}
-
-body {
+ul {
   margin: 0;
+  list-style: none;
+  padding: 0;
 }
 
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 p {
   margin: 0;
-  padding: 0;
-}
-
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 a {
   text-decoration: none;
+  display: inline-block;
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }
 
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+}
+
+address {
+  font-style: normal;
+}
+
+input,
+textarea {
+  display: block;
+}
+
+input,
+textarea:focus-visible {
+  outline: none;
+  border: none;
+  box-shadow: none;
 }
 
 :root {
@@ -71,18 +75,15 @@ body {
   color: var(--brand-color);
 }
 
-.header-info {
-  font-style: normal;
-}
-
 .header-box {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .header-nav {
+  display: flex;
   margin-right: auto;
+  align-items: center;
 }
 
 .header-span {
@@ -121,6 +122,7 @@ body {
 .nav {
   display: flex;
   gap: 50px;
+  margin-right: auto;
 }
 
 .nav-link:hover {
@@ -166,6 +168,13 @@ body {
   transform: scale(1);
 }
 
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
 .hero {
   background-color: var(--hero-back);
   padding: 200px 0 200px 0;
@@ -174,6 +183,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
+}
+.hero__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-title {
@@ -207,11 +221,6 @@ body {
   animation-duration: 3s;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
-}
-
-.containar {
-  display: flex;
-  justify-content: center;
 }
 
 @keyframes move {
@@ -801,60 +810,6 @@ body {
   fill: blue;
 }
 
-.news-btn {
-  padding: 10px 28px;
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 6%;
-  text-align: center;
-  vertical-align: middle;
-  color: #fff;
-  background-color: #2196f3;
-  border: none;
-  border-radius: 4px;
-  display: flex;
-  gap: 10px;
-}
-
-.news-title {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 3%;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.news-input {
-  width: 358px;
-  height: 50px;
-  background-color: var(--text-color);
-  border: 1px solid white;
-  border-radius: 4px;
-}
-
-.news {
-  margin-left: auto;
-  margin-right: 0;
-}
-
-.news-list {
-  flex-direction: row;
-  flex-wrap: nowrap;
-  display: flex;
-  gap: 12px;
-  margin-top: 20px;
-}
-
-.news-svg {
-  width: 23px;
-  height: 24px;
-  fill: white;
-}
-
 .footer {
   background: #2F303A;
   padding: 60px 0 60px 0;
@@ -877,6 +832,7 @@ body {
   font-size: 26px;
   letter-spacing: 0.03em;
   color: var(--brand-color);
+  font-family: "Raleway";
 }
 
 .footer-span {
@@ -894,15 +850,6 @@ body {
   color: var(--link-color);
 }
 
-.footer-text {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 3%;
-  text-transform: uppercase;
-}
-
 .footer-wrap {
   display: flex;
   justify-content: flex-start;
@@ -916,7 +863,7 @@ body {
 }
 
 .join-text {
-  font-family: "Roboto";
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 14px;
   line-height: 100%;
@@ -964,4 +911,60 @@ body {
   color: var(--accent-color);
   margin-top: 20px;
   font-style: normal;
+}
+
+.news-btn {
+  padding: 10px 28px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 6%;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  gap: 10px;
+}
+
+.news-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.news-input {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 15px 16px;
+  color: #ffffff;
+}
+
+.news {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.news-list {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.news-svg {
+  width: 23px;
+  height: 24px;
+  fill: white;
 }/*# sourceMappingURL=main.css.map */

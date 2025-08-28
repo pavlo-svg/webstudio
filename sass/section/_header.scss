@@ -5,7 +5,7 @@
   padding: 24px 0 25px 0;
  }
 .header-link:hover {
-  color: var(--brand-color);
+  color: $brand-color;
 }
 
 .header-box {
@@ -21,13 +21,13 @@
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
-  color: var(--text-color);
+  color: $text-color;
 }
 .header-logo {
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
-  color: var(--brand-color);
+  color: $brand-color;
   margin-right: 93px;
   font-family: "Raleway";
 
@@ -54,7 +54,7 @@
   margin-right: auto;
 }
 .nav-link:hover {
-  color: var(--brand-color);
+  color: $brand-color;
 }
 
 .nav-item{
@@ -62,7 +62,7 @@
 }
 
 .nav-link {
-  color: var(--text-color);
+  color: $text-color;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
@@ -73,7 +73,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .aktife{
-  color: var(--brand-color);
+  color: $brand-color;
 }
 
 
@@ -82,7 +82,7 @@
   width: 100%;
   border-radius: 2px;
   height: 4px;
-  background-color: var(--brand-color);
+  background-color: $brand-color;
   display: block;
   position: absolute;
   bottom: -33px;

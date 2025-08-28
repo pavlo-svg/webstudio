@@ -16,7 +16,7 @@
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
-  color: var(--brand-color);
+  color: $brand-color;
   font-family: "Raleway";
 }
 
@@ -24,14 +24,14 @@
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .footer-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--link-color);
+  color: $link-color;
 }
 .footer-wrap {
   display: flex;
@@ -87,7 +87,7 @@ margin-top: 20px;
 }
 
 .address {
-  color: var(--accent-color);
+  color: $accent-color;
   margin-top: 20px;
   font-style: normal;
 }

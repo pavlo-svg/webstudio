@@ -11,8 +11,8 @@
   gap: 8px;
 }
 .button-btn:hover {
-  background-color: var(--brand-color);
-  color: var(--accent-color);
+  background-color: $brand-color;
+  color: $accent-color;
   box-shadow: 0px 2px 2px 0px #0000001f;
 
   box-shadow: 0px 1px 2px 0px #00000014;
@@ -25,8 +25,8 @@
   line-height: 1.62;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--text-color);
-  background-color: var(--button-btn);
+  color: $text-color;
+  background-color: $button-btn;
   padding: 6px 25px;
   border-color: transparent;
   border-radius: 4px;
@@ -45,7 +45,7 @@
 }
 .cart-text {
   padding: 20px 24px;
-  border: 1px solid var(--button-btn);
+  border: 1px solid $button-btn;
 }
 .cart-list {
   padding-top: 34px;
@@ -61,7 +61,7 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--text-color);
+  color: $text-color;
 }
 
 
@@ -73,7 +73,7 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: var(--second-text);
+  color: $second-text;
 }
 .box-cart{
   position: relative;

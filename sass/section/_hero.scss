@@ -1,5 +1,5 @@
 .hero {
-  background-color: var(--hero-back);
+  background-color: $hero-back;
   padding: 200px 0 200px 0;
   text-align: center;
   background-image: linear-gradient(
@@ -19,7 +19,7 @@
 }
 
 .hero-title {
-  color: var(--accent-color);
+  color: $accent-color;
   margin-bottom: 30px;
   font-weight: 700;
   font-family: "Roboto";
@@ -32,8 +32,8 @@
 }
 
 .hero-button {
-  color: var(--accent-color);
-  background-color: var(--brand-color);
+  color: $accent-color;
+  background-color: $brand-color;
   padding: 10px 32px;
   font-family: "Roboto";
   font-weight: 700;

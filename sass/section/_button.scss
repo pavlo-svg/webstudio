@@ -3,22 +3,14 @@
   padding-bottom: 94px;
   padding-top: 94px;
   display: flex;
-}
-.button-list {
+
+  &__list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
 }
-.button-btn:hover {
-  background-color: $brand-color;
-  color: $accent-color;
-  box-shadow: 0px 2px 2px 0px #0000001f;
 
-  box-shadow: 0px 1px 2px 0px #00000014;
-
-  box-shadow: 0px 3px 1px 0px #0000001a;
-}
 .button-btn {
   font-weight: 500;
   font-size: 16px;
@@ -34,6 +26,21 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+  &:hover {
+  background-color: $brand-color;
+  color: $accent-color;
+  box-shadow: 0px 2px 2px 0px #0000001f;
+
+  box-shadow: 0px 1px 2px 0px #00000014;
+
+  box-shadow: 0px 3px 1px 0px #0000001a;
+}
+
+}
+
+
+
 .cart-img{
   width: 100%;
 }
@@ -43,11 +50,8 @@
     transform: translateY(0);
   }
 }
-.cart-text {
-  padding: 20px 24px;
-  border: 1px solid $button-btn;
-}
-.cart-list {
+
+.cart{
   padding-top: 34px;
   padding-bottom: 94px;
   display: flex;
@@ -55,8 +59,13 @@
   gap: 30px;
   justify-content: center;
   align-items: center;
+
+  &__text {
+  padding: 20px 24px;
+  border: 1px solid $button-btn;
 }
-.cart-titel {
+
+&__titel {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -64,30 +73,32 @@
   color: $text-color;
 }
 
-
-.cart-item {
+&__item {
   flex-basis: calc((100% - 60px) / 3);
-}
-.cart-box {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  color: $second-text;
-}
-.box-cart{
-  position: relative;
-  overflow: hidden;
-}
-.cart-item:hover {
+
+  &:hover {
   box-shadow: 0px 2px 2px 0px #0000001f;
 
   box-shadow: 0px 1px 2px 0px #00000014;
 
   box-shadow: 0px 3px 1px 0px #0000001a;
 }
+}
 
-.text-box{
+&__box {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: $second-text;
+}
+
+&__box{
+  position: relative;
+  overflow: hidden;
+}
+
+&__box{
   width: 100%;
   height: 100%;
   color: #FFFFFF;
@@ -104,3 +115,6 @@
   line-height: 156%;
   padding: 63px 24px;
 }
+}
+
+

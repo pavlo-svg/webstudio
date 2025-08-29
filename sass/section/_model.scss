@@ -22,9 +22,8 @@
   transition-property: transform;
   transition-duration: 250ms;
   transform: translate(-50%, -50%);
-}
 
-.model-close {
+  &__close {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -37,9 +36,15 @@
   position: absolute;
   top: 8px;
   right: 8px;
+
+  &:is(:hover, :focus) {
+  .model__icon {
+    fill: $brand-color;
+  }
+}
 }
 
-.model-ikon {
+&__ikon {
   width: 18px;
   height: 18px;
   fill: #000;
@@ -51,12 +56,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.model-close:is(:hover, :focus) {
-  .model-icon {
-    fill: $brand-color;
-  }
-}
-.model-title {
+
+&__title {
   color: $accent-text;
   text-align: center;
   font-size: 20px;
@@ -65,7 +66,8 @@
   letter-spacing: 0.6px;
   margin-bottom: 12px;
 }
-.model-label {
+
+&__label {
   color: #757575;
   font-size: 12px;
   font-weight: 400;
@@ -73,7 +75,8 @@
   letter-spacing: 0.12px;
   position: relative;
 }
-.model-input {
+
+&__input {
   position: relative;
   width: 100%;
   height: 40px;
@@ -87,8 +90,18 @@
   transition-property: outline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+  outline: 1px solid rgb(56, 43, 238);
 }
-.model-comment {
+  &:hover + .model__ikon,
+  &:focus + .model__ikon {
+  fill: $brand-color;
+}
+}
+
+&__comment {
   padding: 12px 16px;
   width: 100%;
   height: 120px;
@@ -104,7 +117,9 @@
   line-height: normal;
   letter-spacing: 0.12px;
 }
-.model-box {
+
+
+&__box {
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
@@ -116,16 +131,19 @@
   margin-bottom: 30px;
   align-items: center;
 }
-.model-link {
+
+&__link {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #2196f3;
   margin-left: 5px;
 }
-.model-check {
+
+&__check {
   margin-right: 9px;
 }
-.model-sent {
+
+&__sent {
   font-weight: 700;
   font-size: 16px;
   line-height: 187%;
@@ -135,11 +153,14 @@
   padding: 10px 52px;
   background-color: $brand-color;
 }
-.model-frap {
+
+
+&__frap {
   display: flex;
   justify-content: center;
 }
-.model-icon {
+
+&__icon {
   width: 12px;
   height: 12px;
   fill: rgb(0, 0, 0);
@@ -148,14 +169,21 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.model-input:hover,
-.model-input:focus {
-  outline: 1px solid rgb(56, 43, 238);
 }
-.model-input:hover + .model-ikon,
-.model-input:focus + .model-ikon {
-  fill: $brand-color;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .scroll {
   border-radius: 50%;
@@ -168,10 +196,12 @@
   background-color: white;
   width: 40px;
   height: 40px;
-}
 
-.scroll-icon {
+  &__icon {
   width: 30px;
   height: 30px;
   fill: blue;
 }
+}
+
+

@@ -1,5 +1,7 @@
+.clients {
+  padding: 94px 0 94px 0;
 
-.clients-text {
+ &__text {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
@@ -9,7 +11,8 @@
   justify-content: center;
   align-items: center;
 }
-.clients-company {
+
+&__company {
   width: 106px;
   height: 60px;
   fill: rgba(175, 177, 184, 1);
@@ -17,7 +20,9 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-icon-link {
+
+
+&__icon-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,34 +33,26 @@
   transition-property: outline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients-icon-link:hover {
+
+  &:hover {
   outline: 1px solid #2196f3;
   .clients-company {
     fill: #2196f3;
   }
+
 }
-/*.clients-company:hover {
-  width: 106px;
-  height: 60px;
-  fill: rgba33, 150, 243, 1)(;
-}*/
-.clients {
-  padding: 94px 0 94px 0;
 }
-.clients-list {
+
+&__list {
   margin-top: 50px;
   display: flex;
   gap: 30px;
   justify-content: center;
   align-items: center;
 }
-/*.clients-icon-item {
-  border: 1px solid gray;
-  border-radius: 4px;
 }
-.clients-icon-item:hover {
-  border: 1px solid rgba(33, 150, 243, 1);
-  padding: 23px 65px;
-  border-radius: 4px;
-}*/
+
+
+
+
+

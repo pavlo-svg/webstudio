@@ -3,27 +3,30 @@
   padding-left: 24px;
   padding-bottom: 25px;
   padding: 24px 0 25px 0;
- }
-.header-link:hover {
+
+  &__link:hover {
   color: $brand-color;
 }
 
-.header-box {
+&__box {
   display: flex;
  align-items: center;
 }
-.header-nav {
+
+&__nav {
   display: flex;
   margin-right: auto;
   align-items: center;
 }
-.header-span {
+
+&__span {
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
   color: $text-color;
 }
-.header-logo {
+
+&__logo {
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
@@ -33,7 +36,8 @@
 
 
 }
-.header-link {
+
+&__link {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -44,24 +48,34 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-link:hover :nth-child(1) {
+
+  &__:hover:nth-child(1) {
   fill: #2196f3;
 }
+}
+ }
+
+
+
+
+
+
+
+
 .nav {
   display: flex;
   gap: 50px;
   margin-right: auto;
-}
-.nav-link:hover {
+
+  &__link:hover {
   color: $brand-color;
 }
 
-.nav-item{
+&__item{
   position: relative;
 }
 
-.nav-link {
+&__link {
   color: $text-color;
   font-family: "Roboto";
   font-weight: 500;
@@ -72,12 +86,13 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.aktife{
-  color: $brand-color;
 }
 
 
-.aktife::after{
+.aktife{
+  color: $brand-color;
+
+  &::after{
   content: "";
   width: 100%;
   border-radius: 2px;
@@ -92,8 +107,11 @@
   transition-timing-function: 0.4, 0, 0.2, 1;
 }
 
-.aktife:hover::after{
+&:hover::after{
   transform: scale(1);
+}
+
+
 }
 .info{
  display: flex;

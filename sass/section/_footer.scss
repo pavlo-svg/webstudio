@@ -3,16 +3,18 @@
   padding: 60px 0 60px 0;
   display: flex;
   flex-direction: column;
-}
-.footer-info {
+
+  &__info {
   font-style: normal;
 }
-.footer-list {
+
+&__list {
   display: flex;
   flex-direction: column;
   gap: 9px;
 }
-.footer-logo {
+
+&__logo {
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
@@ -20,30 +22,39 @@
   font-family: "Raleway";
 }
 
-.footer-span {
+&__span {
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
   color: $accent-color;
 }
-.footer-link {
+
+&__link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $link-color;
 }
-.footer-wrap {
+
+&__wrap {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
   flex-direction: row;
 }
+}
+
+
+
+
+
+
 .join {
   display: block;
   margin-left: 70px;
-}
-.join-text {
+
+  &__text {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 14px;
@@ -53,21 +64,15 @@
   color: #ffffff;
 }
 
-.icon-join {
-  width: 20px;
-  height: 20px;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.join-icon-list {
+&__icon-list {
   display: flex;
   gap: 10px;
   justify-content: center;
   align-items: center;
 margin-top: 20px;
 }
-.join-icon-link {
+
+&__icon-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,19 +84,29 @@ margin-top: 20px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
-}
-.join-icon-link:hover,
-.join-icon-link:focus {
+
+  &:hover,
+  &:focus {
   background-color: #2196f3;
   fill: #ffffff;
 }
-
-.address {
-  color: $accent-color;
-  margin-top: 20px;
-  font-style: normal;
 }
-.news-btn {
+
+&__icon {
+  width: 20px;
+  height: 20px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+
+.news {
+  margin-left: auto;
+  margin-right: 0;
+
+  &__btn {
   padding: 10px 28px;
   font-family: "Roboto";
   font-weight: 700;
@@ -107,7 +122,8 @@ margin-top: 20px;
   display: flex;
   gap: 10px;
 }
-.news-title {
+
+&__title {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
@@ -116,7 +132,8 @@ margin-top: 20px;
   text-transform: uppercase;
   color: #fff;
 }
-.news-input {
+
+&__input {
   width: 358px;
   height: 50px;
   background-color: transparent;
@@ -125,19 +142,25 @@ margin-top: 20px;
   padding: 15px 16px ;
   color: #ffffff;
 }
-.news {
-  margin-left: auto;
-  margin-right: 0;
-}
-.news-list {
+
+&__list {
   flex-direction: row;
   flex-wrap: nowrap;
   display: flex;
   gap: 12px;
   margin-top: 20px;
 }
-.news-svg {
+
+&__svg {
   width: 23px;
   height: 24px;
   fill: white;
+}
+}
+
+
+.address {
+  color: $accent-color;
+  margin-top: 20px;
+  font-style: normal;
 }

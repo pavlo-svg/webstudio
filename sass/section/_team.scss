@@ -3,35 +3,42 @@
   background-color: #f5f4fa;
   display: flex;
   text-align: center;
-}
-.team-list {
+
+  &__list {
   display: flex;
   gap: 28px;
   justify-content: center;
   text-align: center;
   margin-top: 50px;
 }
-.team-item {
+
+&__item {
   background-color: #ffffff;
 }
-.team-title {
+
+&__title {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
   color: $text-color;
 }
-.team-img {
+
+
+&__img {
   width: 270px;
   height: 260px;
 }
-.team-text {
+
+
+&__text {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: auto;
   padding-right: auto;
 }
-.team-name {
+
+&__name {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -39,21 +46,26 @@
   color: $text-color;
   margin-bottom: 10px;
 }
-.team-job {
+
+&__job {
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
   text-align: center;
   color: $second-text;
 }
-.team-icon-list {
+
+
+&__icon__list {
   display: flex;
   gap: 10px;
   justify-content: center;
   align-items: center;
   margin-top: 16px;
 }
-.team-icon-link {
+
+
+&__icon__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,29 +75,39 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team-icon-link:hover,
-.team-icon-link:focus {
+
+  &:hover,
+  &:focus {
   background-color: #2196f3;
   fill: #ffffff;
 }
-.icon-item {
+}
+}
+
+.icon__item {
   width: 16px;
   height: 12px;
   fill: rgba(117, 117, 117, 1);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.icon-item:hover {
+
+  &:hover {
   width: 16px;
   height: 12px;
   fill: rgba(33, 150, 243, 1);
 }
-.icon-team {
+}
+
+.icon__team {
   width: 20px;
   height: 20px;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+
+
+

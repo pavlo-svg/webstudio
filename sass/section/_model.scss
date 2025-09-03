@@ -1,9 +1,9 @@
 
-.is-hidden {
+.is__hidden {
   opacity: 0;
   pointer-events: none;
 }
-.is-hidden .model{
+.is__hidden .model{
   transform: scale(2);
 }
 .model {

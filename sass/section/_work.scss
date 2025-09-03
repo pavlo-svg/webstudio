@@ -2,15 +2,16 @@
   padding: 0 0 94px 0;
   display: flex;
   text-align: center;
-}
-.work-list {
+
+  &__list {
   display: flex;
   gap: 28px;
   justify-content: center;
   text-align: center;
   margin-top: 50px;
 }
-.work-text {
+
+&__text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -27,12 +28,18 @@
   width: 370px;
   height: 70px;
 }
-.work-item {
+
+&__item {
   position: relative;
 }
-.work-title {
+
+
+&__title {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
   color: $text-color;
 }
+}
+
+

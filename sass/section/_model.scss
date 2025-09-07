@@ -1,11 +1,15 @@
 
-.is__hidden {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
-.is__hidden .model{
+
+.is-hidden .model{
   transform: scale(2);
 }
+
+
+
 .model {
   background-color: #ffffff;
   width: 528px;
@@ -37,11 +41,13 @@
   top: 8px;
   right: 8px;
 
-  &:is(:hover, :focus) {
-  .model__icon {
+
+  &:is(:hover, :focus){
+  model__icon {
     fill: $brand-color;
   }
 }
+ 
 }
 
 &__ikon {
@@ -170,20 +176,6 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .scroll {
   border-radius: 50%;

@@ -92,13 +92,7 @@
 }
 }
 
-&__icon {
-  width: 20px;
-  height: 20px;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 }
 
 
@@ -163,4 +157,14 @@
   color: $accent-color;
   margin-top: 20px;
   font-style: normal;
+}
+.icon{
+
+  &__join {
+  width: 20px;
+  height: 20px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 }

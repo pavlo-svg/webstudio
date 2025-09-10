@@ -1,9 +1,10 @@
 .adwantages {
   padding: 94px 0 94px 0;
   &__list {
-  display: flex;
-  text-align: center;
-  justify-content: center;
+  // display: flex;
+  // text-align: center;
+  // justify-content: center;
+  @extend %flex;
   text-align: start;
   gap: 30px;
 }

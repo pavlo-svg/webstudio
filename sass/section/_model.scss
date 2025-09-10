@@ -34,9 +34,10 @@
   border: none;
   outline: 1px solid gray;
   background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  @extend %flex;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -131,11 +132,12 @@
   line-height: 171%;
   letter-spacing: 0.03em;
   color: black;
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
   margin-top: 20px;
   margin-bottom: 30px;
-  align-items: center;
+  // align-items: center;
+  @extend %flex;
 }
 
 &__link {
@@ -180,9 +182,10 @@
 .scroll {
   border-radius: 50%;
   position: fixed;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // display: flex;
+  @extend %flex;
   bottom: 50px;
   right: 50px;
   background-color: white;

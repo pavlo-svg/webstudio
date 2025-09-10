@@ -7,9 +7,10 @@
   font-size: 36px;
   line-height: 100%;
   letter-spacing: 3%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  @extend %flex;
 }
 
 &__company {
@@ -23,9 +24,10 @@
 
 
 &__icon__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  @extend %flex;
   width: 170px;
   height: 92px;
   border-radius: 4px;
@@ -45,10 +47,11 @@
 
 &__list {
   margin-top: 50px;
-  display: flex;
+  // display: flex;
   gap: 30px;
-  justify-content: center;
-  align-items: center;
+//   justify-content: center;
+//   align-items: center;
+  @extend %flex;
 }
 }
 

@@ -73,9 +73,10 @@
 }
 
 &__icon__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+  @extend %flex;
   padding: 11px;
   border-radius: 50%;
   fill: rgb(255, 255, 255);

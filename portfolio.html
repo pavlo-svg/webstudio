@@ -1,189 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style/main.min.css">
-  </head>
-  <body class="body">
-    <header class="header">
-      <div class="container header__box">
-        <a class="header__logo" href="./index.html"
-          >Web<span class="header__span">Studio</span>
-        </a>
-        <nav class="header__nav">
-          <ul class="nav">
-            <li class="nav__item">
-              <a class="nav__link" href="./index.html">Студія</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link aktife" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="info">
-          <li class="header__item">
-            <a href="info@devstudio.com" class="header__link">
-              <svg class="icon__item"><use href="./img/symbol-defs.svg#icon-email"></use></svg>
-              <i class="header__info">info@devstudio.com</i>
-            </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebStudio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./style/main.min.css">
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="container header__box">
+      <a class="header__logo" href="./index.html">Web<span class="header__span">Studio</span>
+      </a>
+      <nav class="header__nav">
+        <ul class="nav">
+          <li class="nav__item">
+            <a class="nav__link" href="./index.html">Студія</a>
           </li>
-          <li class="header-item">
-            <a href="+38 096 111 11 11" class="header__link">
-              <svg class="icon__item"><use href="./img/symbol-defs.svg#icon-vector"></use></svg>
-              <i class="header__info"> +38 096 111 11 11 </i>
-            </a>
+          <li class="nav__item">
+            <a class="nav__link aktife" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="info">
+        <li class="header__item">
+          <a href="info@devstudio.com" class="header__link">
+            <svg class="icon__item">
+              <use href="./img/symbol-defs.svg#icon-email"></use>
+            </svg>
+            <i class="header__info">info@devstudio.com</i>
+          </a>
+        </li>
+        <li class="header-item">
+          <a href="+38 096 111 11 11" class="header__link">
+            <svg class="icon__item">
+              <use href="./img/symbol-defs.svg#icon-vector"></use>
+            </svg>
+            <i class="header__info"> +38 096 111 11 11 </i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="main">
+    <section class="button">
+      <div class="container">
+        <ul class="button__list">
+          <li class="button__item"><button class="button__btn">усі</button></li>
+          <li class="button__item">
+            <button class="button__btn">Веб-сайт</button>
+          </li>
+          <li class="button__item">
+            <button class="button__btn">Додатки</button>
+          </li>
+          <li class="button__item">
+            <button class="button__btn">Дизайн</button>
+          </li>
+          <li class="button__item">
+            <button class="button__btn">Маркетинг</button>
+          </li>
+        </ul>
+        <ul class="cart">
+          <li class="cart__item">
+            <div class="box__cart">
+              <img src="./img/comp2.jpg" alt="comp2" class="cart__img" />
+              <p class="text__box">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="cart__text">
+              <h3 class="cart__titel">Технокряк</h3>
+              <p class="cart__box">Веб-сайт</p>
+            </div>
+          </li>
+          <li class="cart__item">
+            <div class="box__cart">
+              <img src="./img/basketball.jpg" alt="basketball" class="cart__img" />
+              <p class="text__box">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="cart__text">
+              <h3 class="cart__titel">Постер New Orlean vs Golden Star</h3>
+              <p class="cart__box">Дизайн</p>
+            </div>
+          </li>
+
+          <li class="cart__item">
+            <div class="box__cart">
+              <img src="./img/fisch.jpg" alt="fisch" class="cart__img" />
+              <p class="text__box">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="cart__text">
+              <h3 class="cart__titel">Ресторан Seafood</h3>
+              <p class="cart__box">Додаток</p>
+            </div>
+          </li>
+
+          <li class="cart__item">
+            <div class="box__cart">
+              <img src="./img/headhones.jpg" alt="headhones" class="cart__img" />
+              <p class="text__box">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="cart__text">
+              <h3 class="cart__titel">Проєкт Prime</h3>
+              <p class="cart__box">Маркетинг</p>
+            </div>
+          </li>
+
+          <li class="cart__item">
+            <div class="box__cart">
+              <img src="./img/box.jpg" alt="box" class="cart__img" />
+              <p class="text__box">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="cart__text">
+              <h3 class="cart__titel">Проєкт Boxes</h3>
+              <p class="cart__box">Додаток</p>
+            </div>
+          </li>
+
+          <li class="cart__item">
+            <div class="box__cart">
+              <img src="./img/comp3.jpg" alt="comp3" class="cart__img" />
+              <p class="text__box">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="cart__text">
+              <h3 class="cart__titel">Inspiration has no Borders</h3>
+              <p class="cart__box">Веб-сайт</p>
+            </div>
+          </li>
+
+          <li class="cart__item">
+            <div class="box__cart">
+              <img src="./img/book.jpg" alt="book" class="cart__img" />
+              <p class="text__box">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="cart__text">
+              <h3 class="cart__titel">Видання Limited Edition</h3>
+              <p class="cart__box">Дизайн</p>
+            </div>
+          </li>
+
+          <li class="cart__item">
+            <div class="box__cart">
+              <img src="./img/lab.jpg" alt="lab" class="cart__img" />
+              <p class="text__box">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="cart__text">
+              <h3 class="cart__titel">Проєкт LAB</h3>
+              <p class="cart__box">Маркетинг</p>
+            </div>
+          </li>
+
+          <li class="cart__item">
+            <div class="box__cart">
+              <img src="./img/comp4.jpg" alt="comp4" class="cart__img" />
+              <p class="text__box">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="cart__text">
+              <h3 class="cart__titel">Growing Business</h3>
+              <p class="cart__box">Додаток</p>
+            </div>
           </li>
         </ul>
       </div>
-    </header>
-    <main class="main">
-      <section class="button">
-        <div class="container">
-          <ul class="button__list">
-            <li class="button__item"><button class="button__btn">усі</button></li>
-            <li class="button__item">
-              <button class="button__btn">Веб-сайт</button>
-            </li>
-            <li class="button__item">
-              <button class="button__btn">Додатки</button>
-            </li>
-            <li class="button__item">
-              <button class="button__btn">Дизайн</button>
-            </li>
-            <li class="button__item">
-              <button class="button__btn">Маркетинг</button>
-            </li>
-          </ul>
-          <ul class="cart">
-            <li class="cart__item">
-              <div class="box__cart">
-              <img src="./img/comp2.jpg" alt="comp2" class="cart__img" />
-                <p class="text__box">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div>
-              <div class="cart__text">
-                <h3 class="cart__titel">Технокряк</h3>
-                <p class="cart__box">Веб-сайт</p>
-              </div>
-            </li>
-            <li class="cart__item">
-              <div class="box__cart">
-              <img
-                src="./img/basketball.jpg"
-                alt="basketball"
-                class="cart__img"
-              />
-                <p class="text__box">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div>
-              <div class="cart__text">
-                <h3 class="cart__titel">Постер New Orlean vs Golden Star</h3>
-                <p class="cart__box">Дизайн</p>
-              </div>
-            </li>
-
-            <li class="cart__item">
-              <div class="box__cart">
-                <img src="./img/fisch.jpg" alt="fisch" class="cart__img" />
-                <p class="text__box">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div>
-              <div class="cart__text">
-                <h3 class="cart__titel">Ресторан Seafood</h3>
-                <p class="cart__box">Додаток</p>
-              </div>
-            </li>
-
-            <li class="cart__item">
-              <div class="box__cart">
-               <img src="./img/headhones.jpg" alt="headhones" class="cart__img" />
-                <p class="text__box">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div>
-              <div class="cart__text">
-                <h3 class="cart__titel">Проєкт Prime</h3>
-                <p class="cart__box">Маркетинг</p>
-              </div>
-            </li>
-
-            <li class="cart__item">
-              <div class="box__cart">
-                 <img src="./img/box.jpg" alt="box" class="cart__img" />
-                <p class="text__box">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div>
-              <div class="cart__text">
-                <h3 class="cart__titel">Проєкт Boxes</h3>
-                <p class="cart__box">Додаток</p>
-              </div>
-            </li>
-
-            <li class="cart__item">
-              <div class="box__cart">
-                <img src="./img/comp3.jpg" alt="comp3" class="cart__img" />
-                <p class="text__box">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div>
-              <div class="cart__text">
-                <h3 class="cart__titel">Inspiration has no Borders</h3>
-                <p class="cart__box">Веб-сайт</p>
-              </div>
-            </li>
-
-            <li class="cart__item">
-              <div class="box__cart">
-               <img src="./img/book.jpg" alt="book" class="cart__img" />
-                <p class="text__box">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div>
-              <div class="cart__text">
-                <h3 class="cart__titel">Видання Limited Edition</h3>
-                <p class="cart__box">Дизайн</p>
-              </div>
-            </li>
-
-            <li class="cart__item">
-              <div class="box__cart">
-                <img src="./img/lab.jpg" alt="lab" class="cart__img" />
-                <p class="text__box">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div>
-              <div class="cart__text">
-                <h3 class="cart__titel">Проєкт LAB</h3>
-                <p class="cart__box">Маркетинг</p>
-              </div>
-            </li>
-
-            <li class="cart__item">
-              <div class="box__cart">
-               <img src="./img/comp4.jpg" alt="comp4" class="cart__img" />
-                <p class="text__box">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
-              </div>
-              <div class="cart__text">
-                <h3 class="cart__titel">Growing Business</h3>
-                <p class="cart__box">Додаток</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container footer__wrap">
-        <div class="footer__info">
-        <a href="./index.html" class="footer__logo"
-          >Web<span class="footer__span">Studio</span></a
-        >
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__wrap">
+      <div class="footer__info">
+        <a href="./index.html" class="footer__logo">Web<span class="footer__span">Studio</span></a>
         <address class="footer__address">
           <ul class="footer__list">
             <li class="footer__item">
@@ -205,30 +208,34 @@
       <div class="join">
         <h2 class="join__text">приєднуйтесь</h2>
         <ul class="join__icon__list">
-          <li class="join__icon__item"> <a href="" class="join__icon__link"><svg class="icon__join"><use href="./img/symbol-defs.svg#icon-instagram"></use></svg></a></li>
-          <li class="join__icon__item"> <a href="" class="join__icon__link"><svg class="icon__join"><use href="./img/symbol-defs.svg#icon-twitter"></use></svg></a></li>
-          <li class="join__icon__item"> <a href="" class="join__icon__link"><svg class="icon__join"><use href="./img/symbol-defs.svg#icon-facebook"></use></svg></a></li>
-          <li class="join__icon__item"> <a href="" class="join__icon__link"><svg class="icon__join"><use href="./img/symbol-defs.svg#icon-linkedin"></use></svg></a></li>
+          <li class="join__icon__item"> <a href="" class="join__icon__link"><svg class="icon__join">
+                <use href="./img/symbol-defs.svg#icon-instagram"></use>
+              </svg></a></li>
+          <li class="join__icon__item"> <a href="" class="join__icon__link"><svg class="icon__join">
+                <use href="./img/symbol-defs.svg#icon-twitter"></use>
+              </svg></a></li>
+          <li class="join__icon__item"> <a href="" class="join__icon__link"><svg class="icon__join">
+                <use href="./img/symbol-defs.svg#icon-facebook"></use>
+              </svg></a></li>
+          <li class="join__icon__item"> <a href="" class="join__icon__link"><svg class="icon__join">
+                <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+              </svg></a></li>
         </ul>
       </div>
 
       <div class="news">
-          <h2 class="news__title">Підпишіться на розсилку</h2>
-          <form class="news__list">
-            <input
-              type="email"
-              class="news__input"
-              placeholder="E-mail"
-              required
-            />
-            <button type="submit" class="news__btn">
-              Підписатися<svg class="news__svg">
-                <use href="./img/symbol-defs.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
+        <h2 class="news__title">Підпишіться на розсилку</h2>
+        <form class="news__list">
+          <input type="email" class="news__input" placeholder="E-mail" required />
+          <button type="submit" class="news__btn">
+            Підписатися<svg class="news__svg">
+              <use href="./img/symbol-defs.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>

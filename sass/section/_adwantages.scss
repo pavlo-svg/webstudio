@@ -1,15 +1,15 @@
 .adwantages {
   padding: 94px 0 94px 0;
   &__list {
-  // display: flex;
+  display: flex;
   // text-align: center;
-  // justify-content: center;
-  @extend %flex;
+  justify-content: center;
+  
   text-align: start;
   gap: 30px;
 }
-
-&__item::before {
+&__item{
+&::before {
   content: "";
   display: inline-block;
   width: 270px;
@@ -19,7 +19,7 @@
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 30px;
-
+}
   &:nth-child(1)::before {
   background-image: url(../img/antenna.png);
 }
@@ -32,7 +32,9 @@
   &:nth-child(4)::before {
   background-image: url(../img/astronaut.png);
 }
+
 }
+
 
 &__title {
   font-weight: 700;

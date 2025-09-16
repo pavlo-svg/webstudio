@@ -220,6 +220,8 @@ body {
   padding: 94px 0 94px 0;
 }
 .adwantages__list {
+  display: flex;
+  justify-content: center;
   text-align: start;
   gap: 30px;
 }
@@ -234,16 +236,16 @@ body {
   background-repeat: no-repeat;
   margin-bottom: 30px;
 }
-.adwantages__item::before:nth-child(1)::before {
+.adwantages__item:nth-child(1)::before {
   background-image: url(../img/antenna.png);
 }
-.adwantages__item::before:nth-child(2)::before {
+.adwantages__item:nth-child(2)::before {
   background-image: url(../img/clock.png);
 }
-.adwantages__item::before:nth-child(3)::before {
+.adwantages__item:nth-child(3)::before {
   background-image: url(../img/diagram.png);
 }
-.adwantages__item::before:nth-child(4)::before {
+.adwantages__item:nth-child(4)::before {
   background-image: url(../img/astronaut.png);
 }
 .adwantages__title {
@@ -822,7 +824,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.adwantages__list, .work__text, .team__icon__list, .team__icon__link, .clients__text, .clients__icon__link, .clients__list, .cart, .model__close, .model__box, .scroll, .join__icon__link {
+.work__text, .team__icon__list, .team__icon__link, .clients__text, .clients__icon__link, .clients__list, .cart, .model__close, .model__box, .scroll, .join__icon__link {
   display: flex;
   justify-content: center;
   align-items: center;

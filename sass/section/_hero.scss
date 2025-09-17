@@ -1,6 +1,6 @@
 .hero {
   background-color: $hero-back;
-  padding: 200px 0 200px 0;
+  padding: 118px 0 118px 0;
   text-align: center;
   background-image: linear-gradient(
       to top,
@@ -11,6 +11,15 @@
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
+
+  @media screen and (min-width:1200px) {
+    padding: 200px 0 200px 0;
+  }
+  
+  @media screen and (min-width:768px) {
+    
+  }
+
   &__box{
     display: flex;
     flex-direction: column;
@@ -24,22 +33,33 @@
   font-weight: 700;
   font-family: "Roboto";
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 60px;
-  letter-spacing: 6%;
+  letter-spacing: 1.56px;
   text-align: center;
   text-transform: uppercase;
+  width: 100%;
+
+  @media screen and (min-width:768px) {
+    width: 360px;
+  }
+
+  @media screen and (min-width:1200px) {
+  letter-spacing: 6%;
+  font-size: 44px;
+  width: 696px;
+  }
 }
 
 &__button {
   color: $accent-color;
   background-color: $brand-color;
-  padding: 10px 32px;
+  padding: 10px 3px;
   font-family: "Roboto";
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 30px;
-  letter-spacing: 6%;
+  letter-spacing: 0.96px;
   text-align: center;
   vertical-align: middle;
   border-radius: 4px;
@@ -50,6 +70,11 @@
     animation-duration: 3s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
+
+  @media screen and (min-width:1200px) {
+    padding: 10px 3px;
+  }
+
 }
 }
 

@@ -2,7 +2,15 @@
   display: flex;
   padding-left: 24px;
   padding-bottom: 25px;
-  padding: 24px 0 25px 0;
+  padding: 10px 0;
+
+  @media screen and (min-width:768px) {
+    padding: 21px 0;
+  }
+
+  @media screen and (min-width:1200px) {
+    padding: 25px 0;
+  }
 
   &__link:hover {
   color: $brand-color;
@@ -28,13 +36,20 @@
 
 &__logo {
   font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
+  font-size: 24px;
+  letter-spacing: 0.72px;
   color: $brand-color;
-  margin-right: 93px;
+  margin-right: auto;
   font-family: "Raleway";
 
-
+  @media screen and (min-width:1200px) {
+  font-size: 26px;
+  letter-spacing: 0.78px;
+  margin-right: 93px;
+  }
+  @media screen and (min-width:768px) {
+    margin-right: 88px;
+  }
 }
 
 &__link {
@@ -63,7 +78,12 @@
 
 
 .nav {
-  display: flex;
+  
+  @media screen and (min-width:768px) {
+    display: flex;
+  }
+
+  display: none;
   gap: 50px;
   margin-right: auto;
 
@@ -117,5 +137,18 @@
  display: flex;
  justify-content: center;
  align-items: center;
- gap: 30px;
+ 
+
+ display: none;
+
+ @media screen and (min-width:768px) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ }
+
+ @media screen and (min-width:1200px) {
+  gap: 30px;
+  flex-direction: row;
+ }
 }

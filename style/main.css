@@ -24,6 +24,8 @@ button {
 img {
   display: block;
   width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 address {
@@ -53,12 +55,37 @@ body {
   padding: 0 15px;
   border: 1px solid red;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .header {
   display: flex;
   padding-left: 24px;
   padding-bottom: 25px;
-  padding: 24px 0 25px 0;
+  padding: 10px 0;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 21px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 25px 0;
+  }
 }
 .header__link:hover {
   color: #2196f3;
@@ -80,11 +107,23 @@ body {
 }
 .header__logo {
   font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
+  font-size: 24px;
+  letter-spacing: 0.72px;
   color: #2196f3;
-  margin-right: 93px;
+  margin-right: auto;
   font-family: "Raleway";
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    font-size: 26px;
+    letter-spacing: 0.78px;
+    margin-right: 93px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
 }
 .header__link {
   display: flex;
@@ -103,9 +142,14 @@ body {
 }
 
 .nav {
-  display: flex;
+  display: none;
   gap: 50px;
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
 }
 .nav__link:hover {
   color: #2196f3;
@@ -150,17 +194,35 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info {
+    gap: 30px;
+    flex-direction: row;
+  }
 }
 
 .hero {
   background-color: #2f303a;
-  padding: 200px 0 200px 0;
+  padding: 118px 0 118px 0;
   text-align: center;
   background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.png);
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0 200px 0;
+  }
 }
 .hero__box {
   display: flex;
@@ -173,21 +235,34 @@ body {
   font-weight: 700;
   font-family: "Roboto";
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 60px;
-  letter-spacing: 6%;
+  letter-spacing: 1.56px;
   text-align: center;
   text-transform: uppercase;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    letter-spacing: 6%;
+    font-size: 44px;
+    width: 696px;
+  }
 }
 .hero__button {
   color: #ffffff;
   background-color: #2196f3;
-  padding: 10px 32px;
+  padding: 10px 3px;
   font-family: "Roboto";
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 30px;
-  letter-spacing: 6%;
+  letter-spacing: 0.96px;
   text-align: center;
   vertical-align: middle;
   border-radius: 4px;
@@ -197,6 +272,11 @@ body {
   animation-duration: 3s;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
+}
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    padding: 10px 3px;
+  }
 }
 
 @keyframes move {
@@ -217,13 +297,17 @@ body {
   }
 }
 .adwantages {
-  padding: 94px 0 94px 0;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .adwantages {
+    padding: 94px 0;
+  }
 }
 .adwantages__list {
   display: flex;
-  justify-content: center;
-  text-align: start;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .adwantages__item::before {
   content: "";

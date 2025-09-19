@@ -307,7 +307,6 @@ body {
 .adwantages__list {
   display: flex;
   gap: 30px;
-  flex-wrap: wrap;
 }
 .adwantages__item::before {
   content: "";
@@ -332,13 +331,23 @@ body {
 .adwantages__item:nth-child(4)::before {
   background-image: url(../img/astronaut.png);
 }
+@media screen and (min-width: 768px) {
+  .adwantages__item {
+    flex-wrap: wrap;
+  }
+}
 .adwantages__title {
   font-weight: 700;
   font-size: 14px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.42px;
   text-transform: uppercase;
   color: #212121;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .adwantages__title {
+    flex-wrap: wrap;
+  }
 }
 .adwantages__text {
   font-weight: 400;

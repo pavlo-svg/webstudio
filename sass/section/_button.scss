@@ -1,8 +1,10 @@
 
 .button {
-  padding-bottom: 94px;
-  padding-top: 94px;
   display: flex;
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 
   &__list {
   display: flex;

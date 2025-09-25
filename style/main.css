@@ -384,6 +384,12 @@ body {
   padding: 0 0 94px 0;
   display: flex;
   text-align: center;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
 }
 .work__list {
   display: flex;
@@ -417,42 +423,82 @@ body {
 }
 
 .team {
-  padding: 94px 0 94px 0;
+  padding: 60px 0;
   background-color: #f5f4fa;
   display: flex;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0;
+  }
+}
 .team__list {
   display: flex;
-  gap: 28px;
-  justify-content: center;
-  text-align: center;
-  margin-top: 50px;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+  }
 }
 .team__item {
   background-color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .team__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
 .team__title {
   font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 0.03em;
+  font-size: 28px;
+  letter-spacing: 0.84px;
   text-align: center;
   color: #212121;
 }
-.team__img {
-  width: 270px;
-  height: 260px;
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    letter-spacing: 1.08px;
+  }
 }
 .team__text {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: auto;
-  padding-right: auto;
+  padding: 30px 0 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .team__text {
+    padding: 30px 74px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__text {
+    padding: 30px 32px;
+  }
 }
 .team__name {
   font-weight: 500;
   font-size: 16px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.48px;
   text-align: center;
   color: #212121;
   margin-bottom: 10px;
@@ -460,7 +506,7 @@ body {
 .team__job {
   font-weight: 400;
   font-size: 16px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.48px;
   text-align: center;
   color: #757575;
 }
@@ -504,14 +550,30 @@ body {
 }
 
 .clients {
-  padding: 94px 0 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0;
+  }
 }
 .clients__text {
   font-family: "Roboto";
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 100%;
-  letter-spacing: 3%;
+  letter-spacing: 0.84px;
+}
+@media screen and (min-width: 768px) {
+  .clients__text {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__text {
+    font-size: 36px;
+    letter-spacing: 1.08px;
+  }
 }
 .clients__company {
   width: 106px;
@@ -522,13 +584,23 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__icon__link {
-  width: 170px;
+  width: 100%;
   height: 92px;
   border-radius: 4px;
   outline: 1px solid #afb1b8;
   transition-property: outline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .clients__icon__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__icon__link {
+    width: 170px;
+  }
 }
 .clients__icon__link:hover {
   outline: 1px solid #2196f3;
@@ -537,14 +609,32 @@ body {
   fill: #2196f3;
 }
 .clients__list {
-  margin-top: 50px;
   gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.clients__icon__item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .clients__icon__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__icon__item {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .button {
-  padding-bottom: 94px;
-  padding-top: 94px;
   display: flex;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .button {
+    padding: 94px 0;
+  }
 }
 .button__list {
   display: flex;

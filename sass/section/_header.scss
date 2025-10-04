@@ -1,7 +1,6 @@
 .header {
   display: flex;
-  padding-left: 24px;
-  padding-bottom: 25px;
+
   padding: 10px 0;
 
   @media screen and (min-width:768px) {
@@ -85,7 +84,7 @@
 
   display: none;
   gap: 50px;
-  margin-right: auto;
+  // margin-right: auto;
 
   &__link:hover {
   color: $brand-color;
@@ -134,9 +133,8 @@
 
 }
 .info{
- display: flex;
- justify-content: center;
- align-items: center;
+
+
  
 
  display: none;
@@ -150,5 +148,6 @@
  @media screen and (min-width:1200px) {
   gap: 30px;
   flex-direction: row;
+  align-items: center;
  }
 }

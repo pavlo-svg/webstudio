@@ -18,9 +18,9 @@
     padding: 200px 0 200px 0;
   }
   
-  @media screen and (min-width:768px) {
+  // @media screen and (min-width:768px) {
     
-  }
+  // }
 
   &__box{
     display: flex;
@@ -42,12 +42,11 @@
   text-transform: uppercase;
   width: 100%;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width:480px) {
     width: 360px;
   }
 
   @media screen and (min-width:1200px) {
-  letter-spacing: 6%;
   font-size: 44px;
   width: 696px;
   }
@@ -80,20 +79,20 @@
 }
 }
 
-@keyframes move{
-   0%   {
-        transform: translate(0, 0); 
-    }
-  25%  { 
-        transform: translate(10px, 0); 
-    }
-  50%  {
-        transform: translate(10px, 10px); 
-    }
-  75%  {
-        transform: translate(0, 10px); 
-    }
-  100% {
-         transform: translate(0, 0); 
-        }
-}
+// @keyframes move{
+//    0%   {
+//         transform: translate(0, 0); 
+//     }
+//   25%  { 
+//         transform: translate(10px, 0); 
+//     }
+//   50%  {
+//         transform: translate(10px, 10px); 
+//     }
+//   75%  {
+//         transform: translate(0, 10px); 
+//     }
+//   100% {
+//          transform: translate(0, 0); 
+//         }
+// }

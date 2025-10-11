@@ -1,82 +1,74 @@
 .header {
   padding: 10px 0;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding: 21px 0;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     padding: 25px 0;
   }
 
   &__link:hover {
-  color: $brand-color;
-}
-
-&__box {
-  display: flex;
- align-items: center;
-}
-
-&__nav {
-  display: flex;
-  margin-right: auto;
-  align-items: center;
-}
-
-&__span {
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-  color: $text-color;
-}
-
-&__logo {
-  font-weight: 700;
-  font-size: 24px;
-  letter-spacing: 0.72px;
-  color: $brand-color;
-  margin-right: auto;
-  font-family: "Raleway";
-
-  @media screen and (min-width:1200px) {
-  font-size: 26px;
-  letter-spacing: 0.78px;
-  margin-right: 93px;
+    color: $brand-color;
   }
-  @media screen and (min-width:768px) {
-    margin-right: 88px;
+
+  &__box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+  }
+
+  &__span {
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    color: $text-color;
+  }
+
+  &__logo {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.72px;
+    color: $brand-color;
+    margin-right: auto;
+    font-family: "Raleway";
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      letter-spacing: 0.78px;
+      margin-right: 93px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-right: 88px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: rgba(117, 117, 117, 1);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover:nth-child(1) {
+      fill: #2196f3;
+    }
   }
 }
-
-&__link {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  color: rgba(117, 117, 117, 1);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover:nth-child(1) {
-  fill: #2196f3;
-}
-}
-}
-
-
-
-
-
-
-
 
 .nav {
-  
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
   }
 
@@ -85,67 +77,164 @@
   // margin-right: auto;
 
   &__link:hover {
+    color: $brand-color;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__link {
+    color: $text-color;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 2;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.aktife {
   color: $brand-color;
+
+  &::after {
+    content: "";
+    width: 100%;
+    border-radius: 2px;
+    height: 4px;
+    background-color: $brand-color;
+    display: block;
+    position: absolute;
+    bottom: -33px;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: 0.4, 0, 0.2, 1;
+  }
+
+  &:hover::after {
+    transform: scale(1);
+  }
+}
+.info {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 30px;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
-&__item{
-  position: relative;
-}
-
-&__link {
-  color: $text-color;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 2;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-}
+.mobule {
 
 
-.aktife{
-  color: $brand-color;
-
-  &::after{
-  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  border-radius: 2px;
-  height: 4px;
-  background-color: $brand-color;
-  display: block;
-  position: absolute;
-  bottom: -33px;
-  transform: scale(0);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: 0.4, 0, 0.2, 1;
+  height: 100%;
+  background-color: #fff;
+  opacity: 1;
+
+  &__link {
+    color: #212121;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    margin-bottom: 35px;
+    padding-left: 40px;
+
+    &:hover{
+color: #2196f3;
+    }
+  }
+
+
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__close {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__contakt {
+    color: #2196f3;
+    font-family: Roboto;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.68px;
+    margin-bottom: 32px;
+    margin-top: 302px;
+    padding-left: 40px;
+  }
+
+  &__contaktemail {
+    color: #757575;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    padding-left: 40px;
+  }
+
+  &__social {
+    margin-top: 64px;
+    padding-left: 40px;
+    color: #2196f3;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; 
+    letter-spacing: 0.36px;
+  }
+
+  &__frap {
+    display: flex;
+  }
 }
 
-&:hover::after{
-  transform: scale(1);
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
 }
 
 
-}
-.info{
+.mobile{
 
+  &__modal{
+background-color: transparent;
+width: 49px;
+height: 49px;
 
- 
-
- display: none;
-
- @media screen and (min-width:768px) {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
- }
-
- @media screen and (min-width:1200px) {
-  gap: 30px;
-  flex-direction: row;
-  align-items: center;
- }
+@media screen and (min-width: 768px) {
+    display: none;
+  }
+  }
 }

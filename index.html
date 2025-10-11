@@ -21,6 +21,9 @@
     <div class="container header__box">
       <a class="header__logo" href="./index.html">Web<span class="header__span">Studio</span>
       </a>
+      <button type="button" class="mobile__modal" data-modal-mobile-open><svg class="">
+          <use href="./img/symbol-defs.svg#icon-burger"></use>
+        </svg></button>
       <nav class="header__nav">
         <ul class="nav">
           <li class="nav__item">
@@ -51,8 +54,30 @@
             +38 096 111 11 11
           </a>
         </li>
+
       </ul>
     </div>
+    <div class="mobule is-hidden" data-modal-mobile>
+        <button type="button" class="mobule__close" data-modal-mobile-close><svg class="mobule__icon">
+          <use href="./img/symbol-defs.svg#icon-close"></use>
+        </svg></button>
+        <ul class="mobule__list">
+          <li class="mobule__item"><a href="./index.html" class="mobule__link">Студія</a></li>
+          <li class="mobule__item"><a href="./pages/portfolio.html" class="mobule__link">Портфоліо</a></li>
+          <li class="mobule__item"><a href="" class="mobule__link">Контакти</a></li>
+        </ul>
+        <ul class="mobule__items">
+          <li class="mobule__itm"><a href="tel:+380961111111" class="mobule__contakt">+38 096 111 11 11</a></li>
+          <li class="mobule__itm"><a href="mailto:info@devstudio.com" class="mobule__contaktemail">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobule__frap">
+          <li class="mobule__elm"><a href="" class="mobule__social">Instagram</a></li>
+          <li class="mobule__elm"><a href="" class="mobule__social">twitter</a></li>
+          <li class="mobule__elm"><a href="" class="mobule__social">facebook</a></li>
+          <li class="mobule__elm"><a href="" class="mobule__social">LinkedIn</a></li>
+        </ul>
+        </div>
+      </div>
   </header>
   <main class="main">
     <section class="hero">
@@ -68,7 +93,7 @@
         </button>
       </div>
     </section>
-     <section class="adwantages">
+    <section class="adwantages">
       <div class="container">
         <ul class="adwantages__list">
           <li class="adwantages__item">
@@ -101,7 +126,7 @@
         </ul>
       </div>
     </section>
-     <section class="work">
+    <section class="work">
       <div class="container">
         <h2 class="work__title">Чим ми займаємося</h2>
         <ul class="work__list">
@@ -119,8 +144,8 @@
           </li>
         </ul>
       </div>
-    </section> 
-     <section class="team">
+    </section>
+    <section class="team">
       <div class="container">
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__list">
@@ -243,7 +268,7 @@
         </ul>
       </div>
     </section>
-     <section class="clients">
+    <section class="clients">
       <div class="container">
         <h3 class="clients__text">Постійні клієнти</h3>
         <ul class="clients__list">
@@ -281,7 +306,7 @@
       </div>
     </section>
   </main>
-   <footer class="footer">
+  <footer class="footer">
     <div class="container footer__wrap">
       <div class="footer__info">
         <a href="./index.html" class="footer__logo">Web<span class="footer__span">Studio</span></a>
@@ -304,8 +329,8 @@
             </li>
           </ul>
         </address>
-      </div> 
-   <div class="join">
+      </div>
+      <div class="join">
         <h2 class="join__text">приєднуйтесь</h2>
         <ul class="join__icon__list">
           <li class="join__icon__item">
@@ -329,9 +354,9 @@
               </svg></a>
           </li>
         </ul>
-      </div> 
+      </div>
 
-  <div class="news">
+      <div class="news">
         <h2 class="news__title">Підпишіться на розсилку</h2>
         <form class="news__list">
           <input type="email" class="news__input" placeholder="Email" required />
@@ -343,7 +368,7 @@
         </form>
       </div>
     </div>
-  </footer> 
+  </footer>
   <!-- <div data-modal class="backdrop is-hidden">
     <div class="model">
       <button class="model__close" data-modal-close type="button">
@@ -386,6 +411,7 @@
     </div>
   </div>
   <script type="module" src="./js/model.js"></script> -->
+  <script type="module" src="./js/mobile-modal.js"></script>
 </body>
 
 </html>

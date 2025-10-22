@@ -7,15 +7,71 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../img/hero.png);
+    url(../../img/mobile/hero-mobile@1x.webp);
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
   overflow: hidden;
   background-size: cover;
 
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../img/mobile/hero-mobile@2x.webp);
+
+}
+  
+  @media screen and (min-width:768px) {
+
+    background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../img/tablet/hore-tablet@1x.webp);
+
+      @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../img/tablet/hore-tablet@2x.webp);
+
+}
+  }
+
+
   @media screen and (min-width:1200px) {
     padding: 200px 0 200px 0;
+
+    
+    background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../img/desktop/hore-desktop@1x.webp);
+
+      @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../img/desktop/hore-desktop@2x.webp);
+
+}
   }
   
   // @media screen and (min-width:768px) {

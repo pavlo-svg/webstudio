@@ -297,7 +297,7 @@ body {
   background-color: #2f303a;
   padding: 118px 0 118px 0;
   text-align: center;
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/mobile/hero-mobile@1x.webp);
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobile/hero-mobile@1x.webp);
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -306,28 +306,28 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/mobile/hero-mobile@2x.webp);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobile/hero-mobile@2x.webp);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/tablet/hore-tablet@1x.webp);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/hore-tablet@1x.webp);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/tablet/hore-tablet@2x.webp);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/hore-tablet@2x.webp);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0 200px 0;
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/desktop/hore-desktop@1x.webp);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop/hore-desktop@1x.webp);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/desktop/hore-desktop@2x.webp);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop/hore-desktop@2x.webp);
   }
 }
 .hero__box {

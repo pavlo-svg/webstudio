@@ -136,8 +136,6 @@
 }
 
 .mobule {
-
-
   position: fixed;
   top: 0;
   left: 0;
@@ -157,12 +155,10 @@
     margin-bottom: 35px;
     padding-left: 40px;
 
-    &:hover{
-color: #2196f3;
+    &:hover {
+      color: #2196f3;
     }
   }
-
-
 
   &__icon {
     width: 40px;
@@ -211,7 +207,7 @@ color: #2196f3;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 22px; 
+    line-height: 22px;
     letter-spacing: 0.36px;
   }
 
@@ -225,16 +221,23 @@ color: #2196f3;
   opacity: 0;
 }
 
+.mobile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 
-.mobile{
-
-  &__modal{
-background-color: transparent;
-width: 49px;
-height: 49px;
-
-@media screen and (min-width: 768px) {
-    display: none;
+  &__modal {
+    background-color: transparent;
+    width: 49px;
+    height: 49px;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
+
+  &__svg {
+    width: 49px;
+    height: 49px;
+    padding: 12px 8px;
   }
 }

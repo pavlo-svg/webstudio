@@ -45,7 +45,7 @@ textarea:focus-visible {
 }
 
 body {
-  background-color: var(--accent-color);
+  background-color: #ffffff;
   font-family: "Roboto";
 }
 
